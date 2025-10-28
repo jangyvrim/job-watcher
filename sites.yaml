@@ -1,0 +1,27 @@
+keywords:
+  - designer
+  - 디자이너
+  - product manager
+  - pm
+  - 프로덕트 매니저
+  - 기획
+
+sites:
+  - name: Greenhouse 예시
+    url: https://boards.greenhouse.io/examplecompany
+    selector: .opening a   # 모르면 이 줄 삭제해도 됨
+    attr: href
+
+  - name: Lever 예시
+    url: https://jobs.lever.co/example
+    selector: a.posting-title
+    attr: href
+
+  - name: Workday 예시(SSR)
+    url: https://example.wd1.myworkdayjobs.com/en-US/ExampleCareers
+    selector: a[role="link"][data-automation-id="jobTitle"]
+    attr: href
+
+  - name: 자체 채용 페이지(셀렉터 모를 때)
+    url: https://example.com/careers
+    # selector 없음 → 전역 a태그에서 휴리스틱 필터링
